@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="height=device-height, initial-scale=1, user-scalable=no">
+    <title>To-Do-List App</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link type="image/png" sizes="120x120" rel="icon" href="images/logo- favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div class="logo">
+        <img src="images/logo.png" alt="To-Do-List App Icon">
+    </div>
+    <div class="container">
+        <h2 class="topheading">TO - DO - LIST</h2>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3">
+                <div class="add-control">
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="Add task..." />
+                        <i class="fa fa-plus form-control-feedback add-btn" area-hidden="true" title="Add Item"></i>
+                    </div>
+                </div>
+                <p class="err text-danger text-center hidden">
+                    <i class="fa fa-warning"></i>
+                    Oops ! Please, enter task name
+                </p>
+                <p class="no-items text-muted text-center hidden">
+                    <i class="fa fa-ban"></i>
+                </p>
+                <ul class="todo-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h4>
+            Made by Sunny Modi &copy; 2022
+        </h4>
+    </div>
+</body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+    var loader = document.getElementById("preloader")
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+    })
+</script>
+
+</html>
